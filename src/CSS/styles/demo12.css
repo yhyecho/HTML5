@@ -1,0 +1,6 @@
+@charset "utf-8";
+@import "italic.css";
+.p2 {
+  color: greenyellow;
+  font-size: 20px;
+}
