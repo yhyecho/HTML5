@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>表单元素[上]</title>
+</head>
+<body>
+  <!-- <form> 定义表单 -->
+  <form autocomplete="on" id="register" action="http:www.baidu.com" method="get" name="reg" target="_blank">
+    <!-- <input> 表示用户输入数据 -->
+    <!-- disabled autocomplete type name autofocus value -->
+    用户名<input type="text" name="user" autofocus>
+
+    <!-- <label> 添加说明标签 -->
+    <p>
+      <label for="pwd">密码：<input id="pwd" name="pwd"></label>
+    </p>
+
+    <!-- <fieldset> 对表单进行编组 -->
+    <fieldset>
+      <!-- <legend> 添加分组说明标签 -->
+      <legend> 注册表单 </legend>
+    </fieldset>
+
+    <!-- <button> 添加按钮 -->
+    <button type="submit">提交</button>
+    <button type="reset">重置</button>
+    <button type="button">普通按钮</button>
+  </form>
+
+  <!-- 让表单外的元素和指定的表单挂钩提交 -->
+  电子邮件： <input name="email" form="register"> <br>
+
+</body>
+</html>

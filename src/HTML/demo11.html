@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>全局属性和其它</title>
+</head>
+<body>
+  <!-- 一．实体 -->
+  &ltdiv&gt <br>
+  我&nbsp&nbsp和你之间的空格 <br>
+  <b style="font-size:30px">&copy</b>
+  <!-- 元数据 -->
+  <meta name="author" content="bnbbs">
+  <meta name="description" content="这是一个 HTML5 页面">
+  <meta name="keywords" content="html5,css3,响应式">
+  
+  <!-- 二．元数据 -->
+  <!-- 模拟 HTTP 标头字段 -->
+  <!-- 声明字符编码 -->
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html charset=utf-8">
+
+  <!-- 5 秒跳转到指定 URL -->
+  <!-- <meta http-equiv="refresh" content="2;http://www.baidu.com"> -->
+
+  <!-- 三．全局属性 -->
+  <!-- 
+    id 属性
+    class 属性
+    accesskey 属性
+    contenteditable 属性
+    dir 属性
+    hidden 属性
+    lang 属性
+    title 属性
+    tabindex 属性
+    style 属性
+   -->
+   <p id="abc">段落</p>
+   <p class="abc">段落</p>
+   <!-- accesskey 属性 -->
+   <input type="text" name="user" accesskey="n">
+   <!-- contenteditable 属性 -->
+   <p contenteditable="true">我可以修改吗</p>
+   <!-- dir 属性 让文本从左到右（ltr），还是从右到左（rtl） -->
+   <p dir="rtl">文字到右边了</p>
+   <!-- hidden 属性 -->
+   <p hidden>文字到右边了</p>
+   <!-- lang 属性 -->
+   <p lang="en">HTML5</p>
+   <!-- title 属性 -->
+   <p title="HTML5 教程">HTML5</p>
+   <!-- tabindex 属性 -->
+   <input type="text" name="user" tabindex="2">
+   <!-- style 属性 -->
+   <p style="color:red;">CSS 样式</p>
+</body>
+</html>

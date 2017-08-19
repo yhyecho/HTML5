@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>嵌入元素</title>
+</head>
+
+<body>
+  <a href="">
+    <!-- width="200px" height="200px" -->
+    <img ismap src="./img/1.jpg" alt="风景图">
+  </a>
+
+  <img src="./img/1.jpg" alt="风景图" usemap="#Map"> 
+  <map name="Map">
+    <area shape="rect" coords="31,28,112,100" href="http://www.baidu.com" target="_blank" alt="方形">
+    <area shape="circle" coords="187,142,47" href="http://www.google.com" target="_blank" alt="圆形">
+    <area shape="poly" coords="287,26,240,66,308,112" href="http://www.soso.com" target="_blank" alt="多边形">
+  </map>
+</body>
+
+</html>

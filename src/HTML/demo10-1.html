@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>表单元素[中]</title>
+</head>
+<body>
+    <div>
+      <input type="text" size="50" maxlength="10" value="" placeholder="请输入内容">
+      <!-- 其它属性
+        pattern
+        disabled
+        maxlength
+        size
+        readonly
+        required
+        -->
+    </div>
+    <div>
+      <input list="footlist">
+      <datalist id="footlist">
+          <option value="苹果">苹果</option>
+          <option value="桔子">桔子</option>
+          <option value="香蕉" label="香蕉">
+          <option value="梨子">
+      </datalist>
+    </div>
+    <div>
+        <form action="">
+          <input type="text" name="test" id="test" required>
+          <button>提交</button>
+        </form>
+    </div>
+
+    <div>
+        <form action="">
+          <input type="password" name="pwd" id="pwd" required>
+          <button>提交</button>
+        </form>
+    </div>
+
+    <div>
+        <form action="">
+          <input type="search">
+          <button>搜索</button> <br>
+          <input type="number" step="2" min="10" max="100"> <br>
+          <input type="range">
+        </form>
+    </div>
+
+    <div>
+        <input type="date">
+        <input type="month">
+        <input type="time">
+        <input type="week">
+        <input type="datetime">
+        <input type="datetime-local">
+    </div>
+    <div>
+      <form action="">
+        <input type="color">
+        音乐<input type="checkbox"> 体育<input type="checkbox">
+        <input type="radio" name="sex" value="男"> 男 
+        <input type="radio" name="sex" value="女"> 女
+        <button>提交</button>
+      </form>
+    </div>
+
+    <div>
+      <form action="">
+          <input type="submit">
+          <input type="image" src="./img/1.jpg">
+          <input type="email">
+          <input type="tel">
+          <input type="url">
+          <input type="hidden">
+          <!-- 
+            accept: 指定接受的 MIME 类型
+           -->
+          <input type="file" accept="image/gif, image/jpeg, image/png">
+      </form>
+    </div>
+</body>
+</html>

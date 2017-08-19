@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>表单元素[下]</title>
+</head>
+<body>
+  <form action="">
+    <select name="frult" size="10">
+      <optgroup label="水果类">
+          <option value="1">苹果</option>
+          <option value="2">橘子</option>
+          <option value="3" label="香蕉">香蕉</option>
+      </optgroup>
+      <optgroup label="粗粮">
+          <option value="4">小米</option>
+          <option value="5" selected>大米</option>
+          <option value="6" label="香蕉">玉米</option>
+      </optgroup>
+    </select>
+    <button>提交</button>
+  </form>
+  <div>
+      <!-- textarea 多行文本框 -->
+      <textarea name="content" rows="20" cols="30" wrap="hard">请留下您的建议！ </textarea>
+  </div>
+
+  <!-- 计算结果 -->
+  <div>
+      <form oninput="res.value = num1.valueAsNumber * num2.valueAsNumber">
+          <input type="number" id="num1"> x <input type="number" id="num2">
+          <output for="num1 num2" name="res">
+      </form>
+  </div>
+
+  <!-- 输入验证 -->
+  <div>
+      <form action="">
+        <input type="text" required><br>
+        <input type="number" min="10" max="100"><br>
+        <input type="text" placeholder="请输入区号+座机" required pattern="^[\d]{2,4}\-[\d]{6,8}$">
+        <button>submit</button>
+      </form>
+      <!-- 禁止表单验证 -->
+      <form action="http://li.cc" novalidate>
+  </div>
+</body>
+</html>

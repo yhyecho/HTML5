@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>音频和视频</title>
+</head>
+<body>
+    <!-- webm格式视频 -->
+    <!-- <video src="test.webm" width="800" height="600"></video> -->
+    <div>
+      <video src="http://www.runoob.com/try/demo_source/movie.mp4" width="400" height="300" 
+      autoplay controls loop muted>
+      </video>
+    </div>
+    
+    <div>
+      <!-- 预加载设置 
+          preload 属性有三个值：none 表示播放器什么都不加载
+          metadata 表示播放之前只能加载元数据（宽高、第一帧画面等信息）
+          auto 表示请求浏览器尽快下载整个视频
+      -->
+      <video src="http://www.runoob.com/try/demo_source/movie.mp4" width="400" height="300" controls preload="none">
+      </video>
+    </div>
+    <div>
+      <!-- 使用预览图 -->
+      <video src="http://www.runoob.com/try/demo_source/movie.mp4" width="400" height="300" controls poster="./img/1.jpg"></video>
+    </div>
+    <div>
+      <!-- 兼容多个浏览器 -->
+      <video width="400" height="300" controls poster="img.png">
+          <source src="http://www.runoob.com/try/demo_source/movie.mp4">
+          <source src="http://www.runoob.com/try/demo_source/movie.ogg">
+          <object>这里引入 flash 播放器实现 IE9 以下，但没必要了</object>
+      </video>
+    </div>
+    <div>
+      <!-- audio 音频元素 -->
+      <audio src="http://www.runoob.com/try/demo_source/horse.mp3" controls autoplay></audio>
+    </div>
+    <div>
+      <!-- 兼容多个浏览器 -->
+      <audio controls>
+          <source src="http://www.runoob.com/try/demo_source/horse.mp3">
+          <source src="http://www.runoob.com/try/demo_source/horse.ogg">
+      </audio>
+    </div>
+</body>
+</html>

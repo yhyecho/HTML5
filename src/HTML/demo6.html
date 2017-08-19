@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>表格元素</title>
+</head>
+
+<body>
+  <table border="1">
+    <tr>
+      <td>张三</td>
+      <td>男</td>
+      <td>未婚</td>
+    </tr>
+    <tr>
+      <td>李四</td>
+      <td>女</td>
+      <td>已婚</td>
+    </tr>
+  </table>
+  <br>
+  <table border="1" style="width:300px">
+    <tr>
+      <th>姓名</th>
+      <th>性别</th>
+      <th>婚否</th>
+    </tr>
+    <tr>
+      <td>张三</td>
+      <td>男</td>
+      <td>未婚</td>
+    </tr>
+    <tr>
+      <td>李四</td>
+      <td>女</td>
+      <td>已婚</td>
+    </tr>
+  </table>
+  <br>
+  <table border="1" style="width:300px">
+    <tr>
+      <th rowspan="4">基本情况</th>
+      <th>姓名</th>
+      <th>性别</th>
+      <th>婚否</th>
+    </tr>
+    <tr>
+      <td>张三</td>
+      <td>男</td>
+      <td>未婚</td>
+    </tr>
+    <tr>
+      <td>李四</td>
+      <td>女</td>
+      <td>已婚</td>
+    </tr>
+    <tr>
+      <td colspan="3">统计：共两人</td>
+    </tr>
+  </table>
+  <br>
+  <table border="1" style="width:300px">
+    <caption>这是一个表格</caption>
+    <tfoot>
+      <tr>
+        <td colspan="3">统计：共两人</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr style="background:red;">
+        <td>张三</td>
+        <td>男</td>
+        <td>未婚</td>
+      </tr>
+      <tr>
+        <td>李四</td>
+        <td>女</td>
+        <td>已婚</td>
+      </tr>
+    </tbody>
+    <thead>
+      <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>婚否</th>
+      </tr>
+    </thead>
+  </table>
+
+  <br>
+  <table border="1" style="width:300px">
+    <colgroup>
+      <col>
+      <col style="background:red;" span="1">
+    </colgroup>
+      <caption>这是一个表格</caption>
+      <tbody>
+        <tr>
+          <td>张三</td>
+          <td>男</td>
+          <td>未婚</td>
+        </tr>
+        <tr>
+          <td>李四</td>
+          <td>女</td>
+          <td>已婚</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>姓名</th>
+          <th>性别</th>
+          <th>婚否</th>
+        </tr>
+      </thead>
+  </table>
+</body>
+
+</html>
