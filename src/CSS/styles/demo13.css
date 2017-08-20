@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+/* 通用选择器会将所有元素匹配并配置样式 */
+* {
+  border: 1px solid red;
+}
+
+p { 
+  color: red;
+}
+
+#abc {
+  font-size: 20px;
+}
+
+b.abc {
+  color: orange;
+}
+
+b.def {
+  font-size: 30px;
+}
+
+[href] {
+  color: red;
+}
+
+[type="password"] { 
+  border: 3px solid red;
+}
+
+ul > li { 
+  border: 1px solid red;
+}

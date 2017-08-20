@@ -1,0 +1,61 @@
+@charset "uft-8";
+
+:root {
+  border: 1px solid red;
+}
+
+ul > li {
+  color: red;
+}
+
+ul > li:first-child {
+  color: gold;
+}
+
+input:enabled {
+  border: 1px solid red;
+}
+
+input:disabled {
+  border: 1px solid blue;
+}
+
+input:checked {
+  display: none;
+}
+
+input:valid {
+  border: 3px solid green;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+a:link {
+  color: red;
+}
+a:visited {
+  color: orange;
+}
+a:hover {
+  color: pink;
+}
+a:active {
+  color: blue;
+}
+
+input:focus {
+  border: 3px solid greenyellow;
+}
+
+a:not([href*="baidu"]) {
+  color: pink;
+}
+p:empty {
+  display: none;
+}
+
+:lang(en) {
+  color: orange;
+}
